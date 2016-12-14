@@ -71,4 +71,4 @@ deploy:
   type: git
   repo: 
 		github: https://github.com/HuyangJake/huyangjake.github.io.git,master
-		coding: https://git.coding.net/huyangjake/ColdReading.git,coding-pages
+		coding: https://git.coding.net/huyangjake/huyangjake.git,coding-pages

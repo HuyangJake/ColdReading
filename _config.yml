@@ -72,3 +72,22 @@ deploy:
   repo: 
 		github: https://github.com/HuyangJake/huyangjake.github.io.git,master
 		coding: https://git.coding.net/huyangjake/huyangjake.git,coding-pages
+
+jsonContent:
+    meta: false
+    pages: false
+    posts:
+      title: true
+      date: true
+      path: true
+      text: true
+      raw: false
+      content: false
+      slug: false
+      updated: false
+      comments: false
+      link: false
+      permalink: false
+      excerpt: false
+      categories: false
+      tags: true

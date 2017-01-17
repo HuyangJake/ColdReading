@@ -176,7 +176,7 @@ tags: iOS
 #### 装饰者模式的主要特点：
 ![](http://ojam5z7vg.bkt.clouddn.com/clodreading/jpg/%E8%A3%85%E9%A5%B0%E8%80%85%E6%A8%A1%E5%BC%8F%E7%89%B9%E7%82%B9.png)
 
-#### 装饰者模式示意图：
+#### 装饰者模式类图：
 ![](http://ojam5z7vg.bkt.clouddn.com/clodreading/jpg/%E8%A3%85%E9%A5%B0%E8%80%85%E6%A8%A1%E5%BC%8F%E7%B1%BB%E7%A4%BA%E6%84%8F%E5%9B%BE.png)
 
 #### 实际的例子：java中常用的java.io类就存在着大量装饰者
@@ -200,4 +200,6 @@ tags: iOS
 在本文的例子中有明显体现：子类继承的方法中调用`super`方法，在这之前或者之后可以加上自己的行为，达到特定目标。
 
 对装饰者模式的理解还比较基础有待继续研究……欢迎指正指导，谢谢！
+
+iOS中装饰者模式的实现的后续研究请看[Objective-C中的装饰模式](/2017/01/10/Objective-C中的装饰模式/index.html)
  

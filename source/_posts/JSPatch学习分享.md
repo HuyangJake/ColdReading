@@ -8,7 +8,7 @@ tags: iOS
 
 
 
- _如果不清楚本文的主角 `JSPatch`是什么请看我博客中的`JSPatch`学习笔记： [这里](http://jake.gift/2016/12/19/JSPatch%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%B8%80/) 和 [这里](http://jake.gift/2016/12/19/JSPatch%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BA%8C/)_
+ _如果不清楚本文的主角 `JSPatch`是什么请看我博客中的`JSPatch`学习笔记： [这里](/2016/12/19/JSPatch%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%B8%80/index.html) 和 [这里](/2016/12/19/JSPatch%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BA%8C/index.html)_
 
 ### 背景
 

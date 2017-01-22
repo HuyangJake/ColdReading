@@ -1,0 +1,86 @@
+# Header
+
+menu:
+  主页: /
+  iOS: /tags/iOS/
+
+# SubNav
+subnav:
+  github: "https://github.com/huyangjake"
+  # weibo: "#"
+  # rss: "#"
+  # zhihu: "#"
+  #qq: "#"
+  #weixin: "#"
+  jianshu: "http://www.jianshu.com/u/b64617df987a"
+  #douban: "#"
+  #mail: "mailto:litten225@qq.com"
+  #facebook: "#"
+  #google: "#"
+  #twitter: "#"
+  #linkedin: "#"
+
+# rss: /atom.xml
+
+# 是否需要修改 root 路径
+# 如果您的网站存放在子目录中，例如 http://yoursite.com/blog，
+# 请将您的 url 设为 http://yoursite.com/blog 并把 root 设为 /blog/。
+root: 
+
+# Content
+
+# 文章太长，截断按钮文字
+excerpt_link: more
+# 文章卡片右下角常驻链接，不需要请设置为false
+show_all_link: '展开全文'
+# 数学公式
+mathjax: false
+# 是否在新窗口打开链接
+open_in_new: false
+
+# 打赏
+# 请在需要打赏的文章的md文件头部，设置属性reward: true
+
+# 打赏基础设定：0-关闭打赏； 1-文章对应的md文件里有reward:true属性，才有打赏； 2-所有文章均有打赏
+reward_type: 0
+# 打赏wording
+reward_wording: '谢谢你请我吃糖果'
+# 支付宝二维码图片地址，跟你设置头像的方式一样。比如：/assets/img/alipay.jpg
+alipay: 
+# 微信二维码图片地址
+weixin: 
+
+# Miscellaneous
+baidu_analytics: ''
+google_analytics: ''
+favicon: /favicon.png
+
+#你的头像url
+avatar: http://ojam5z7vg.bkt.clouddn.com/coldreading/jpg/avatar_600.png
+
+#是否开启分享
+share_jia: true
+
+#是否开启多说评论，填写你在多说申请的项目名称 duoshuo: duoshuo-key
+#若使用disqus，请在博客config文件中填写disqus_shortname，并关闭多说评论
+duoshuo: huyangjake
+
+# 智能菜单
+# 如不需要，将该对应项置为false
+# 比如
+#smart_menu:
+#  friends: false
+smart_menu:
+  innerArchive: '所有文章'
+  friends: '大牛传送门'
+  aboutme: '关于我'
+
+friends:
+  onevcat: https://onevcat.com/#blog
+  sunnyxx: http://blog.sunnyxx.com/
+  bang: http://blog.cnbang.net/
+  唐巧: http://blog.devtang.com/
+  没故事的卓同学: http://www.jianshu.com/users/88a056103c02/latest_articles
+  Casa Taloyum: http://casatwy.com/
+
+aboutme: 一年小猿人，沉浸于Objective-C，Swift<br>感冒JavaScript，python<br><br>坐标：杭州<br>邮箱：huyangjake@163.com<br>

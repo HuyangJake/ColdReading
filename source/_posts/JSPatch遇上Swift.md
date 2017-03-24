@@ -9,6 +9,8 @@ JSPatch的动态更新是依赖于Objective-C的runtime，那作为静态语言�
 ### 纯Swift类没有动态性 无法重写纯swift类的方法和属性
 JSPatch在进行到overrideMethod进行方法实现IMP替换时要求class实现NSCoping协议，而不继承自NSObject的swift类是不遵循该协议的，因此会崩溃。
 
+<!-- more -->
+
 ### Swift中使用Method Swizzling的原则
 _摘自底部参考资料_
 

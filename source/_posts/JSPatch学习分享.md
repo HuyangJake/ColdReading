@@ -23,6 +23,8 @@ iOS Developer Program License Agreement里3.3.2提到不可动态下发可执行
 
 JSPatch 能做到通过 JS 调用和改写 OC 方法最根本的原因是 Objective-C 是动态语言，OC 上所有方法的调用/类的生成都通过 Objective-C Runtime 在运行时进行，我们可以通过类名/方法名反射得到相应的类和方法：
 
+<!-- more -->
+
 ``` objectivec
 Class class = NSClassFromString("UIViewController");
 id viewController = [[class alloc] init];

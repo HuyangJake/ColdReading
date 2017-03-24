@@ -9,7 +9,7 @@ tags: iOS
 
 ### 什么是装饰模式
 就描述概念而言，我觉得__《Head First 设计模式》__这本书通过各种例子阐述得要更加详细易懂。__《Objective-C编程之道：iOS设计模式解析》__讲得更多是iOS开发中的使用和不同实现方式的对比。
-
+<!-- more -->
 标准的装饰模式有包括一个抽象的Component父类，它声明了一些操作，它具体的类讲进行重载以实现自己特定的操作。这个Component具体类是模式中的被装饰者，Component父类可以被细化为另一个叫做Decorator的抽象类，即装饰者抽象类。Decorator类中包含了一个Component的引用。Decorator的具体类为Component或者Decorator定义了几个扩展行为，并且会在自己的操作中内嵌Component操作。关系图见 [__装饰模式类图__](#class map)
 
 Component定义了一些抽象操作，具体类将进行重载实现自己特定的操作。Decorator抽象类通过将一个Component（或Decorator）内嵌到Decorator对象，定义了扩展这个Component的实例的“装饰性”的行为。

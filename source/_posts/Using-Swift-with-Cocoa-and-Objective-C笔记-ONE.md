@@ -11,6 +11,7 @@ Objective-C 能够使用空值标记来设定一个参数类型，属性类型�
 * 以__nullable标注声明的空值类型，被作为可选值导入到 Swift。
 * 没有以空值标注声明的类型被作为隐式的解包可选值导入到 Swift。
 
+<!-- more -->
 Objective-C申明
 
 ``` objectivec

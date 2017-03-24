@@ -9,6 +9,7 @@ tags: iOS
 JSPatch 是一个开源项目([Github链接](https://github.com/bang590/JSPatch))，只需要在项目里引入极小的引擎文件，就可以使用 JavaScript 调用任何 Objective-C 的原生接口，替换任意 Objective-C 原生方法。目前主要用于下发 JS 脚本替换原生 Objective-C 代码，实时修复线上 bug。
 
 理解下来类似于运行时的Method Swizzling，动态地将需要修复的bug代码替换成更新的代码。不同的是JSPatch使用JavaScript来进行热修复，可以在App上线的状态下替换App内的JS文件从而可以随心所欲修改和替换原有的方法，达到热修复的效果。
+<!-- more -->
 
 ----
 ### JSPatch的使用

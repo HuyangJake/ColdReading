@@ -7,6 +7,8 @@ tags: iOS
 ### 背景
 项目中用到了本地登录存储cookie，再进行webView请求时间带上cookie的功能。不是很清晰逻辑，于是学习了解了下iOS中cookie的使用，做个小结。跳过概念直接看[使用🌰](#example)
 
+<!-- more -->
+
 ### Cookie介绍
 Cookie分类两类：
 

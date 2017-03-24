@@ -11,7 +11,7 @@ tags: iOS Swift
 
 >如果某个对象是 Objective-C 或者 Swift 类的实例，或者这个对象可以转换成另一种类型，那么这个对象则属于AnyObject类型的对象  _例如，一个Int[]类型的 Swift 数组包含Int结构的元素。Int类型并不是一个类的实例，但由于Int类型转换成了NSNumber类，Int类型属于AnyObject类型的。_
 
-
+<!-- more -->
 ### __Swift数组转换成NSArray__:
 
 * 当我们从 Swift 数组转换为NSArray对象时，Swift 数组里的元素必须是属于AnyObject的。

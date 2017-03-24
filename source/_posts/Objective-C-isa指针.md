@@ -24,6 +24,7 @@ tags: iOS
  ```
  
 那个这个Class又是什么呢？在objc.h中我们发现其仅仅是一个结构(struct)指针的typedef定义:
+<!-- more -->
 
 	 typedefstruct objc_class *Class;
  因此，NSObject的定义就像这个样子：

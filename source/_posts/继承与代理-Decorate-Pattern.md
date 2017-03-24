@@ -10,6 +10,8 @@ tags: iOS
 ### 问题
 问题情景：父类的方法列表中和协议中有同样的方法（_代码如下_），子类继承方法同时代理方也实现协议方法，那么当父类调用`decoratePatternTest`这个方法时具体的执行方是谁？子类同时是代理方和不是代理方分别有什么样的情况呢？
 
+<!-- more -->
+
 ``` objectivec
 
 #import <Foundation/Foundation.h>

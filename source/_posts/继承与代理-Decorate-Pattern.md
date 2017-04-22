@@ -108,7 +108,7 @@ tags: iOS
 
 其实问题的关键是在代理者的协议方法调用的时机。
 
-![](http://ojam5z7vg.bkt.clouddn.com/clodreading/jpg/%E7%BB%A7%E6%89%BF%E4%B8%8E%E4%BB%A3%E7%90%86.png-blogwebp)
+![](http://ojam5z7vg.bkt.clouddn.com/clodreading/jpg/%E7%BB%A7%E6%89%BF%E4%B8%8E%E4%BB%A3%E7%90%86.png-blog)
 
 * 当子类继承了方法又是代理者，那么在父类方法中通过`（self != self.decotate）`来判断不用再去执行协议中的方法
 
@@ -172,17 +172,17 @@ tags: iOS
 >__装饰者模式__动态地将责任附件到对象上，若要扩展功能，装饰着提供了比继承更具有弹性的方案。
 
 #### 装饰者模式的设计原则：
-![](http://ojam5z7vg.bkt.clouddn.com/clodreading/jpg/%E8%A3%85%E9%A5%B0%E8%80%85%E6%A8%A1%E5%BC%8F%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99.png-blogwebp)
+![](http://ojam5z7vg.bkt.clouddn.com/clodreading/jpg/%E8%A3%85%E9%A5%B0%E8%80%85%E6%A8%A1%E5%BC%8F%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99.png-blog)
 可以随心为一个类扩展功能，但不允许对已经存在的代码进行修改。
 
 #### 装饰者模式的主要特点：
-![](http://ojam5z7vg.bkt.clouddn.com/clodreading/jpg/%E8%A3%85%E9%A5%B0%E8%80%85%E6%A8%A1%E5%BC%8F%E7%89%B9%E7%82%B9.png-blogwebp)
+![](http://ojam5z7vg.bkt.clouddn.com/clodreading/jpg/%E8%A3%85%E9%A5%B0%E8%80%85%E6%A8%A1%E5%BC%8F%E7%89%B9%E7%82%B9.png-blog)
 
 #### 装饰者模式类图：
-![](http://ojam5z7vg.bkt.clouddn.com/clodreading/jpg/%E8%A3%85%E9%A5%B0%E8%80%85%E6%A8%A1%E5%BC%8F%E7%B1%BB%E7%A4%BA%E6%84%8F%E5%9B%BE.png-blogwebp)
+![](http://ojam5z7vg.bkt.clouddn.com/clodreading/jpg/%E8%A3%85%E9%A5%B0%E8%80%85%E6%A8%A1%E5%BC%8F%E7%B1%BB%E7%A4%BA%E6%84%8F%E5%9B%BE.png-blog)
 
 #### 实际的例子：java中常用的java.io类就存在着大量装饰者
-![](http://ojam5z7vg.bkt.clouddn.com/clodreading/jpg/%E8%A3%85%E9%A5%B0%E8%80%85java.io.png-blogwebp)
+![](http://ojam5z7vg.bkt.clouddn.com/clodreading/jpg/%E8%A3%85%E9%A5%B0%E8%80%85java.io.png-blog)
 
 以上内容摘自《Head First设计模式》 第三章 装饰者模式 （79-107）
 

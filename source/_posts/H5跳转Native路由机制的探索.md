@@ -54,7 +54,7 @@ ps: 文中不涉及具体代码，主要记录实现的机制和逻辑，之后�
 	 	
 我们来看一张简单的流程图：	
 
-![](http://ojam5z7vg.bkt.clouddn.com/coldreading/jpg/DynamicH5%E6%96%B9%E6%A1%88.png-blogwebp)
+![](http://ojam5z7vg.bkt.clouddn.com/coldreading/jpg/DynamicH5%E6%96%B9%E6%A1%88.png-blog)
 
 APP启动程序先读取plist中的默认H5地址赋值到model，在请求tms配置文件之后，再获取tms中配置的H5地址赋值到model，这样可以保证每个H5地址都可以有值，并且都是我们所需要的最新的地址。如此，即使在线上，不用发版本我们的APP也可以自如地控制和更新每个功能模块跳转的H5页面内容。
 
@@ -69,7 +69,7 @@ APP中的部分功能模块点击跳转指向本地的哪个页面由服务端�
 可以随时切换功能模块跳转到对应的H5页面还是对应的Native页面，当然前提是这两者页面都有实现。
 
 例如：
-![](http://ojam5z7vg.bkt.clouddn.com/coldreading/jpg/hospitalFunctions.png-blogwebp)
+![](http://ojam5z7vg.bkt.clouddn.com/coldreading/jpg/hospitalFunctions.png-blog)
 
 在这样的功能块中，每个功能模块点击后通过服务器返回的NativeScheme判断跳转到本地的对应页面。
 
@@ -112,7 +112,7 @@ __实现原理：__
 我们还可以在nativeScheme判读环节添加一个动态的节点(_根据需求_)，以实现点击功能块后是跳转到H5页面还是跳转本地的页面(_此逻辑不同于本章第三节 “SwitchPage方案”_)。可以给每个功能块分别添加 本地scheme地址 和 H5地址 两个字段，用于分别是跳向哪种界面。判断规则可以根据自己的需求来定。
 
 附上NativeScheme的简单流程图：
-![](http://ojam5z7vg.bkt.clouddn.com/coldreading/jpg/NativeScheme.png-blogwebp)
+![](http://ojam5z7vg.bkt.clouddn.com/coldreading/jpg/NativeScheme.png-blog)
 
 
 _此方案部分参考：[https://github.com/DarielChen/DCURLRouter](https://github.com/DarielChen/DCURLRouter) 感谢作者_
@@ -136,7 +136,7 @@ __实现原理__：
 * 重写本地的Nativgation的push方法， 在此方法调用super之前，判断将要跳转的控制器名称在tms请求返回的数据中是否存在，如果存在则跳转webView控制器，不存在则按照原来方法跳转。（可结合NativeScheme方案使用，在URLRouter中实现此逻辑）
 
 附上简单流程图：
-![](http://ojam5z7vg.bkt.clouddn.com/coldreading/jpg/SwitchPage.png-blogwebp)
+![](http://ojam5z7vg.bkt.clouddn.com/coldreading/jpg/SwitchPage.png-blog)
 
 ### 总结
 不足：NativeScheme方案中的参数传递比较地生硬，若是需要跳转的Native控制器需要制定的参数需要额外处理，则无法通过shceme后带参数的方式在`URLRouter`中直接给要返回的控制器添加参数

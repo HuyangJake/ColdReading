@@ -4,7 +4,7 @@ date: 2017-04-20 11:27:20
 tags: iOS
 ---
 
-NSDistionary是非常熟悉常用的一个NSFoundation中的类，最显著的几个特点是：
+NSDistionary是非常熟悉常用的一个Foundation中的类，最显著的几个特点是：
 
 * 以键值对存储数据
 * 存储的数据具有唯一性

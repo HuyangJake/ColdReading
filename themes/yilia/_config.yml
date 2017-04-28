@@ -56,7 +56,7 @@ google_analytics: ''
 favicon: /favicon.png
 
 #你的头像url
-avatar: http://ojam5z7vg.bkt.clouddn.com/coldreading/jpg/avatar_600.png-blog
+avatar: https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1493955842&di=23391087aa4182c2140298c9cf59db16&imgtype=jpg&er=1&src=http%3A%2F%2Ff1.diyitui.com%2F25%2F0a%2F9d%2F31%2F91%2F54%2F02%2F63%2Fe5%2F85%2Fc3%2F69%2Fb5%2F4e%2F38%2F5c.jpg
 
 #是否开启分享
 share_jia: true
@@ -82,5 +82,7 @@ friends:
   唐巧: http://blog.devtang.com/
   没故事的卓同学: http://www.jianshu.com/users/88a056103c02/latest_articles
   Casa Taloyum: http://casatwy.com/
+  念茜: https://nianxi.net/
+  程序员读书清单: http://lucida.me/blog/developer-reading-list/
 
 aboutme: 一年小猿人，沉浸于Objective-C，Swift<br>感冒JavaScript，python<br><br>坐标：杭州<br>邮箱：huyangjake@163.com<br>

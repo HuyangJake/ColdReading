@@ -1,7 +1,7 @@
 ---
 title: Swift的weak unowned unowned(unsafe)
 date: 2017-01-19 11:56:19
-tags: iOS Swift
+tags: [iOS, Swift]
 ---
 
 Swift同样也是用ARC管理内存，为了解决引用循环。同OC一样使用weak修饰对象，在weak引用指向的对象被释放之后，其自身会被置为nil也会被释放。

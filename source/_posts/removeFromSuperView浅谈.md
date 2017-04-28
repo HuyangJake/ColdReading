@@ -1,7 +1,7 @@
 ---
 title: removeFromSuperView浅谈
 date: 2017-03-29 17:26:16
-tags:
+tags: iOS
 ---
 >Unlinks the receiver from its superview and its window, and removes it from the responder chain.
 

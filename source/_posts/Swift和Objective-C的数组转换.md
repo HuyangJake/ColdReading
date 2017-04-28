@@ -1,7 +1,7 @@
 ---
 title: Swift和Objective-C的数组转换
 date: 2017-01-20 10:45:57
-tags: iOS Swift
+tags: [iOS, Swift]
 ---
 
 1. 当我们在 Objective-C 代码中使用 Swift 类或者协议时，接入的API会将全部所有类型的Swift数组代替为NSArray。

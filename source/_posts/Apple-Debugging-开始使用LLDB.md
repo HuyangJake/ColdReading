@@ -1,12 +1,24 @@
 ---
-title: Apple Debugging 开始使用LLDB
+title: Apple Debugging---开始使用LLDB
 date: 2017-05-23 23:43:58
-tags:
+tags: 学习笔记
 ---
 
 ### Getting around Rootless
 
-Apple的Rootless机制虽然保护了系统的安全，同时也将我们挡在了门外。
+OS X 10.11 中引入的 Rootless，即使是root用户，也无法对以下路径有写和执行的权限：
+
+	/System
+	/bin
+	/sbin
+	/usr (except /usr/local)
+	只有Apple自身签名的软件（含命令行工具）可以。
+
+Apple的Rootless机制虽然保护了系统的安全，防止了大部分恶意软件想通过单纯的引导用户，输入自己的密码点击确定来直接切换到root做一些违法的事情。也可以防止黑客黑了一个用户然后就有root权限可以肆意妄为的情况，不过对于真正的黑客来说
+
+![](https://pic2.zhimg.com/e3a51869c1a65e3cb56378470b5af695_b.jpg)
+
+
 
 ### Disabling Rootless
 
@@ -32,7 +44,24 @@ Apple的Rootless机制虽然保护了系统的安全，同时也将我们挡在�
 ### Attaching LLDB to Xcode
  使用`lldb` attach 到最常用的工具Xcode！
 
-	file /Applications/Xcode.app/Contents/MacOS/Xcode
+方式一：
+
+	lldb file /Applications/Xcode.app/Contents/MacOS/Xcode
+	
+方式二：
+
+	lldb -n Xcode  //需要Xcode在运行状态
+	
+方式三：
+
+	pgrep -x Xcode  //需要Xcode在运行状态
+	lldb -p 89921 //89921为Xcode的PID
+	
+方式四：(attaching 一个将会运行的程序)
+
+	lldb -n Finder -w
+	
+	pkill Finder
 
  运行程序：
 
@@ -53,3 +82,7 @@ Apple的Rootless机制虽然保护了系统的安全，同时也将我们挡在�
 		
 		//修改一个断点，添加一个触发条件
 		breakpoint modify 1 -c "(BOOL)[$rdi isKindOfClass:[NSTextView class]]" 
+		
+		
+内容出处：
+__《Advanced Apple Debugging & Reverse Engineering》__

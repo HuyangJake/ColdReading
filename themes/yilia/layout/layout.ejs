@@ -14,14 +14,34 @@
           </div>
           <div id="js-content" class="content-ll">
             <%- body %>
+            <div id="container2"></div>
+       <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+    <script>
+    var gitment = new Gitment({
+       id: location.href, // 可选。默认为 location.href
+       owner: 'huyangjake',
+       repo: 'BlogComments',
+       oauth: {
+         client_id: '465fc53423145e17a447',
+         client_secret: '4c8103f9a678b2e4546912bd02111ddf33c49f24',
+        },
+      })
+
+     if (location.href != "http://jake.gift/" && location.href != "http://localhost:4000/"  && location.href != "http://coldreading.space/") {
+        gitment.render('container2')
+     }
+    </script>
           </div>
         </div>
       </div>
       <%- partial('_partial/footer') %>
     </div>
+    
     <%- partial('_partial/after-footer') %>
     <%- partial('_partial/tools') %>
     <%- partial('_partial/viewer') %>
+
   </div>
   
 </body>

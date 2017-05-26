@@ -65,7 +65,7 @@ share_jia: true
 
 #是否开启多说评论，填写你在多说申请的项目名称 duoshuo: duoshuo-key
 #若使用disqus，请在博客config文件中填写disqus_shortname，并关闭多说评论
-duoshuo: huyangjake
+duoshuo: false
 
 # 智能菜单
 # 如不需要，将该对应项置为false
@@ -87,4 +87,4 @@ friends:
   念茜: https://nianxi.net/
   程序员读书清单: http://lucida.me/blog/developer-reading-list/
 
-aboutme: 一年小猿人，沉浸于Objective-C，Swift<br>感冒JavaScript，python<br><br>坐标：杭州<br>邮箱：huyangjake@163.com<br>
+aboutme: 1.5年小猿人，沉浸于Objective-C，Swift<br>感冒JavaScript，python<br><br>坐标：杭州<br>邮箱：huyangjake@163.com<br>

@@ -67,22 +67,68 @@ Apple的Rootless机制虽然保护了系统的安全，防止了大部分恶意�
 
 	process lanuch -e /dev/ttys004 --
 	
-	
 这里的`ttys004`是shell中的某个tab的唯一id
+	
+----
 
+#### 运行程序时可以携带的参数：
+* 通过`-w`参数改变运行程序的目录：
+
+``` lldb
+(lldb) process launch -w /Applications
+```
+
+* 也可以直接将参数加到程序后面：
+
+``` lldb
+(lldb) process launch -- /Applications
+```
+
+
+* `-X`参数让 `shell` 接受任何格式参数，比如下面这种 `~` 字符
+
+``` lldb
+(lldb) process launch -X true -- ~/Desktop
+```
+
+ps： `run` 命令是上面 `process launch -X true --` 的简写
+
+可以直接  ` run ~/Desktop`
+	
+* `-o` 命令让LLDB输出到指定的文件
+
+``` lldb
+(lldb) process launch -o /tmp/ls_output.txt -- /Applications
+
+```
+
+* `-i` 命令可以从外部文件读取数据，这在不想stdin的状况下很有用（还没有体会到😌 ）
+
+``` shell
+(lldb) process launch -i /tmp/wc_input.txt
+
+等同于
+wc < /tmp/wc_input.txt  //wc为当前lldb的target
+```
+
+* `-n` 命令告诉LLDB不要创建stdin
+
+``` 
+(lldb) process launch -n
+```
+
+----
 
  按`Ctrl + C`可以暂停debugger， 添加一个断点：
 
-		breakpoint set -n "-[NSView hitTest:]"
-		
-
-		continue //断点后继续执行
-		
-		po $rdi // 查看RDI CPU register
-		
-		//修改一个断点，添加一个触发条件
-		breakpoint modify 1 -c "(BOOL)[$rdi isKindOfClass:[NSTextView class]]" 
-		
+``` shell
+breakpoint set -n "-[NSView hitTest:]"	
+continue //断点后继续执行
+po $rdi // 查看RDI CPU register	
+//修改一个断点，添加一个触发条件
+breakpoint modify 1 -c "(BOOL)[$rdi isKindOfClass:[NSTextView class]]" 
+	
+```		
 		
 内容出处：
 __《Advanced Apple Debugging & Reverse Engineering》__

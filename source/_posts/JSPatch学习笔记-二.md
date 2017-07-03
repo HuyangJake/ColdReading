@@ -14,9 +14,12 @@ tags: [iOS, 学习笔记]
 * 更多思考
 
 
+
 ----
 #### 1. JSPatch原理浅谈
 JSPatch用iOS内置的JavaScriptCore.framework作为JS引擎，但没有用它JSExport的特性进行JS-OC函 数互调，而是通过Objective-C Runtime，从JS传递要调用的类名函数名到Objective-C，再使用NSInvocation动态调用对应的OC方法。
+
+<!--more-->
 
 详细原理介绍可见作者博客:[JSPatch 实现原理详解](https://github.com/bang590/JSPatch/wiki/JSPatch-%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86%E8%AF%A6%E8%A7%A3)
 

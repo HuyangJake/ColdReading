@@ -144,7 +144,7 @@ friends:
 # 请在需要打赏的文章的md文件头部，设置属性reward: true
 
 # 打赏基础设定：0-关闭打赏； 1-文章对应的md文件里有reward:true属性，才有打赏； 2-所有文章均有打赏
-reward_type: 2
+reward_type: 0
 # 打赏wording
 reward_wording1: '纯属好玩'
 reward_wording2: '扫码打赏，你说多少就多少'
@@ -154,7 +154,7 @@ alipay: /img/alipay.png
 weixin: /img/weixin.png
 
 #是否开启“关于我”。
-aboutme: 2年小猿人，沉浸于Objective-C，Swift<br>感冒JavaScript，python<br><br>坐标：杭州<br>邮箱：huyangjake@163.com<br>
+aboutme: 2年小猿人，沉浸于Objective-C，Swift       感冒JavaScript，python   坐标：杭州   邮箱：huyangjake@163.com
 #aboutme: false
 
 # 是否在新窗口打开链接
@@ -192,7 +192,7 @@ baidu_analytics: 3fdf633934fb9f62ceee0538975b8820
 # 不蒜子网站计数设置
 # http://ibruce.info/2015/04/04/busuanzi/
 visit_counter:
-  on: true
+  on: false
   site_visit: 访问人数
   page_visit: 本页阅读量
 

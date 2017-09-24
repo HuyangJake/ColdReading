@@ -7,7 +7,7 @@ title: ColdCode
 subtitle: 托起一片绿叶，走向更远的远方
 description: 记录生活工作
 author: Jakey_yang
-language: zh-cn
+language: zh-Hans
 timezone:
 
 # URL
@@ -20,8 +20,8 @@ permalink_defaults:
 # Directory
 source_dir: source
 public_dir: public
-tag_dir: tags
-archive_dir: archives
+tag_dir: /tags
+archive_dir: /archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
@@ -63,7 +63,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: spfk
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

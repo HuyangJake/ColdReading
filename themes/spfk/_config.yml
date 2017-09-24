@@ -27,9 +27,9 @@ subnav:
   mail: "http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=PAkNDgsKBQ4MCnxNTRJfU1E"
   github: "https://github.com/huyangjake"
   # zhihu: "#"
-  weibo: "#"
+  # weibo: "#"
   # google: "#"
-  twitter: "#"
+  # twitter: "#"
   # linkedin: "#"
   jianshu: "http://www.jianshu.com/u/b64617df987a"
   # facebook: "#"
@@ -85,13 +85,13 @@ youyan:
 background:
   on: false
   #on: false
-  background_sum: 24
-  background_image: 109
+  background_sum: 19
+  background_image: 22
 
 highlight_style:
-  on: true
-  inline_code: 5
-  code_block: 5
+  on: on
+  inline_code: 1
+  code_block: 1
   # Set inline_code to style highlight text
   # Chose a highlight theme for code block
   # 通过 inline_code 切换内置文本高亮样式 Value: 0 - 9 可选
@@ -99,12 +99,11 @@ highlight_style:
 
 blockquote_style:
   #on: true
-  blockquote: 1  # Value: 0 - 7 可选
+  blockquote: 2  # Value: 0 - 7 可选
   # 自定义文章「引用部分」的样式
 
 # 左边栏宽度 px
 left_col_width: 300
-
 # 目录中标题不换行
 # Keep TOC title on the same line | 
 toc_nowrap: false

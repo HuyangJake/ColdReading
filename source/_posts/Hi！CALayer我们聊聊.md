@@ -1,7 +1,8 @@
 ---
 title: Hi！CALayer我们聊聊
 date: 2017-07-17 15:39:59
-tags: [iOS, 学习笔记]
+tags: [iOS]
+categories: [猿猿养成记, 学习笔记]
 ---
 
 CALayer和UIView最大的不同就是，CALayer不处理用户交互。因为它并不清楚具体的响应链。
@@ -96,3 +97,4 @@ contentsCenter 其实是一个CGRect，它定义了一个固定的边框和一�
 ### Reference
 
 [《iOS 核心动画》](https://zsisme.gitbooks.io/ios-/content/chapter2/the-contents-image.html)  感谢译者的付出！👍
+

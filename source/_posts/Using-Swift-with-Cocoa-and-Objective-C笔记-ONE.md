@@ -2,6 +2,7 @@
 title: Using Swift with Cocoa and Objective-C笔记_ONE
 date: 2017-01-19 15:49:18
 tags: [iOS, Swift]
+categories: [猿猿养成记]
 ---
 
 ## Objective-C和Swift的非空值、可选值转换
@@ -102,3 +103,4 @@ var cachedData: [NSURL: NSData]
 >注意 除了 Foundation 中的集合类， Objective-C 的轻量级泛型会被 Swift 忽略掉。任何其他使用轻量级泛型的类型在导入到 Swift 中时会被视为无参数化。
 
 ---
+

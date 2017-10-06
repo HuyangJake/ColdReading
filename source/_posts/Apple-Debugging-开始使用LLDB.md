@@ -1,7 +1,8 @@
 ---
 title: Apple Debugging---开始使用LLDB
 date: 2017-05-23 23:43:58
-tags: 学习笔记
+tags: 
+categories: [猿猿养成记, 学习笔记]
 ---
 
 ### Getting around Rootless
@@ -132,3 +133,4 @@ breakpoint modify 1 -c "(BOOL)[$rdi isKindOfClass:[NSTextView class]]"
 		
 内容出处：
 __《Advanced Apple Debugging & Reverse Engineering》__
+

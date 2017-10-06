@@ -2,6 +2,7 @@
 title: JSPatch学习分享
 date: 2016-12-23 10:38:08
 tags: iOS
+categories: [猿猿养成记]
 ---
 
 ## App热更新技术——JSPatch学习分享

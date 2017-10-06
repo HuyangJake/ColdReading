@@ -2,6 +2,7 @@
 title: iOS10新特性适配总结
 date: 2016-12-16 08:45:51
 tags: iOS
+categories: [猿猿养成记]
 ---
 
 ### 1. Notification(通知)

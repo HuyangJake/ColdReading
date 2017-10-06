@@ -2,6 +2,7 @@
 title: Objective-C中的装饰模式
 date: 2017-01-10 14:34:56
 tags: iOS
+categories: [猿猿养成记]
 ---
 
 ### 背景
@@ -156,3 +157,5 @@ __类图如下:__
 
 参考：《Objective-C编程之道：iOS设计模式解析》第16章，（190-206）
 demo地址：[GitHub](https://github.com/HuyangJake/DecoratorDemo.git)
+
+

@@ -48,11 +48,12 @@ index_with_subtitle: false
 menu:
   home: /
   categories: /categories/
-  about: /about/
-  archives: /archives
   tags: /tags
-  #sitemap: /sitemap.xml
-  #commonweal: /404/
+  archives: /archives
+  # sitemap: /sitemap.xml
+  sitemap: /2016/12/29/知识传送门/
+  # commonweal: /404/
+  about: /about/
 
 # Enable/Disable menu icons.
 # Icon Mapping:

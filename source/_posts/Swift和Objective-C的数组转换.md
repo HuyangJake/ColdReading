@@ -2,6 +2,7 @@
 title: Swift和Objective-C的数组转换
 date: 2017-01-20 10:45:57
 tags: [iOS, Swift]
+categories: [猿猿养成记]
 ---
 
 1. 当我们在 Objective-C 代码中使用 Swift 类或者协议时，接入的API会将全部所有类型的Swift数组代替为NSArray。
@@ -50,3 +51,4 @@ for aView: UIView! in foundationArray {
 ```
 
 参考：[Using Swift with Cocoa and Objective-C](https://developer.apple.com/library/content/documentation/Swift/Conceptual/BuildingCocoaApps/index.html)
+

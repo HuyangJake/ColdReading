@@ -1,7 +1,8 @@
 ---
 title: Apple debugging---使用LLDB替换方法为自定义的block
 date: 2017-05-25 22:26:02
-tags: 学习笔记
+tags: 
+categories: [猿猿养成记, 学习笔记]
 ---
 
 ### Swizzling with block injection
@@ -39,3 +40,4 @@ tags: 学习笔记
 至此，NSObject的init方法就被替换为了上述代码中的block，`LLDB`中有一个bug，在block中执行IMPS就会崩溃。
 
 内容来自：__《Advanced Apple Debugging & Reverse Engineering》__
+

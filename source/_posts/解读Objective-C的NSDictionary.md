@@ -2,6 +2,7 @@
 title: 解读Objective-C的NSDictionary
 date: 2017-04-20 11:27:20
 tags: iOS
+categories: [猿猿养成记]
 ---
 
 NSDistionary是非常熟悉常用的一个Foundation中的类，最显著的几个特点是：
@@ -189,3 +190,5 @@ typedef struct {
 [NSDictionary 的内部实现](http://www.cnblogs.com/doudouyoutang/p/4379068.html)
 
 _《Objective-C高级编程：iOS与OS X多线程和内存管理》 ARC的实现_
+
+

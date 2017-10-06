@@ -2,6 +2,7 @@
 title: 继承与代理--Decorate Pattern
 date: 2017-01-04 17:51:11
 tags: iOS
+categories: [猿猿养成记]
 ---
 
 ### 场景
@@ -205,3 +206,5 @@ tags: iOS
 
 iOS中装饰者模式的实现的后续研究请看[Objective-C中的装饰模式](/2017/01/10/Objective-C中的装饰模式/index.html)
  
+
+

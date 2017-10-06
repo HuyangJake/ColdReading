@@ -1,7 +1,8 @@
 ---
 title: iOS隐式动画
 date: 2017-07-19 09:08:59
-tags: [iOS, 学习笔记]
+tags: [iOS]
+categories: [猿猿养成记, 学习笔记]
 ---
 
 先来一段引用改变下对动画的世界观：
@@ -99,3 +100,4 @@ PS: CATransition响应CAAction协议，并且可以当做一个图层行为
 ### Reference
 
 [iOS Core Animation](https://zsisme.gitbooks.io/ios-/content/chapter7/layer-actions.html) 十分感谢译者
+

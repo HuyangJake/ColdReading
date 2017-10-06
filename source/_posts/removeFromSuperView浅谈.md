@@ -2,6 +2,7 @@
 title: removeFromSuperView浅谈
 date: 2017-03-29 17:26:16
 tags: iOS
+categories: [猿猿养成记]
 ---
 >Unlinks the receiver from its superview and its window, and removes it from the responder chain.
 
@@ -53,3 +54,5 @@ __无论是ARC还是MRC中多次调用removeFromSuperview和addSubview:方法，
 
 __永远不要在你的View的drawRect:方法中调用removeFromSuperview。__
  
+
+

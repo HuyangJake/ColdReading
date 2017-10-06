@@ -1,7 +1,8 @@
 ---
 title: JSPatch学习笔记(一)
 date: 2016-12-19 09:09:29
-tags: [iOS, 学习笔记]
+tags: [iOS]
+categories: [猿猿养成记, 学习笔记]
 ---
 
 
@@ -66,3 +67,4 @@ defineClass('JPViewController', {
 后话：方法名不再有补全提示千万不要写错了
 
 正在继续学习……
+

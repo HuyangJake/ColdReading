@@ -1,7 +1,8 @@
 ---
 title: JSPatch学习笔记(二)
 date: 2016-12-19 09:14:01
-tags: [iOS, 学习笔记] 
+tags: [iOS] 
+categories: [猿猿养成记, 学习笔记]
 ---
 
 ###  这次笔记中主要描述的有：
@@ -215,3 +216,4 @@ js内创建的字典为js对象，传入oc方法无效
 * JS热修复的代码在下一次更新中应当使用原生的代码替换，不能超过一个版本。避免对JSPatch有过多的依赖
 * 使用JS语法来调用OC的方法，没有代码自动补全显得非常吃力。作者bang开发了[Xcode插件：JSPatchX](https://github.com/bang590/JSPatchX)，然而Xcode8不支持插件了。。。
 * 在一个很复杂的方法中,仅中间某一行代码需要修改,就要将整个方法用JS重写一遍,推介作者开发的Objective-C转JavaScript代码工具[JSPatch Convertor](https://github.com/bang590/JSPatchConvertor),但一些复杂的语法还是要人工修正
+

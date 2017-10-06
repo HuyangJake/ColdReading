@@ -2,6 +2,7 @@
 title: JSPatch遇上Swift
 date: 2017-02-08 14:42:27
 tags: [iOS, Swift]
+categories: [猿猿养成记]
 ---
 
 JSPatch的动态更新是依赖于Objective-C的runtime，那作为静态语言的Swift就没有办法使用JSPatch了吗？Swift类成员还是可以使用Objective-C的运行时动态派发，只要Swift类是继承自`NSObject`或者使用`dynamic`修饰的类的成员。

@@ -2,6 +2,7 @@
 title: cookie in iOS
 date: 2017-01-12 16:37:13
 tags: iOS
+categories: [猿猿养成记]
 ---
 
 ### 背景
@@ -189,3 +190,4 @@ _《HTTP 权威指南》第11章 客户端识别与cookie机制_
 解决UIWebView和WKWebView之间的cookie共享问题：
 
 [iOS开发-打通UIWebView和WKWebView的Cookie](https://fengqiangboy.com/14611518603473.html)
+

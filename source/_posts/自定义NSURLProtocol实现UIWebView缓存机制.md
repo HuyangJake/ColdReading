@@ -2,6 +2,7 @@
 title: 自定义NSURLProtocol实现UIWebView缓存机制
 date: 2017-07-14 10:08:43
 tags: iOS
+categories: [猿猿养成记]
 ---
 
 近期正在研究UIWebView加载网页的缓存的实现，比较常见的是使用自定义的NSURLProtocol进行拦截处理。根据网上的资料，结合试验和自己的理解做个记录。
@@ -221,3 +222,4 @@ Apple的[URL Loading System](https://developer.apple.com/library/ios/documentati
 
 ### Reference 
 [https://www.raywenderlich.com/59982/nsurlprotocol-tutorial](https://www.raywenderlich.com/59982/nsurlprotocol-tutorial)
+

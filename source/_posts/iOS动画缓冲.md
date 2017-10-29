@@ -10,7 +10,7 @@ categories: [猿猿养成记, 学习笔记]
 ### CAMediaTimingFunction
 
 设置缓冲方程式首先需要设置`CAAnimation`的`timingFunction`属性，是`CAMediaTimingFunction`类的一个对象。
-
+<!--more-->
 CAMediaTimingFunction的工厂方法：`+timingFunctionWithName:` 的参数常量如下：
 
 ```
@@ -63,5 +63,6 @@ kCAMediaTimingFunctionDefault
 }
 ```
 
-### 自定义缓冲动画
+### Reference
+《iOS核心动画》章节 缓冲
 

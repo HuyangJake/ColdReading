@@ -1,3 +1,3 @@
 # ColdReading
 ## 冷读空间
-### 博客地址：[http://jake.gift](http://jake.gift)
+### 博客地址：[http://huyangjie.com](http://huangjie.com)

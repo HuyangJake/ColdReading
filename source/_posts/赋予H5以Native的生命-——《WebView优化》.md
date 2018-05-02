@@ -4,11 +4,11 @@ date: 2018-05-02 18:07:40
 tags: [iOS]
 ---
 
-本文是从客户端为起点发散到webView使用过程中的优化点。当前市场上的Native App中webView使用的情况还是比较多的，像手机QQ，淘宝业务更替快速的产品，使用webView动态渲染页面是必然的选择，然而遵从这个选择就必须承担着它带来的弊病，更确切地说应该是尽可能解决它的弊病。
+本文是从客户端为起点发散到WebView使用过程中的优化点。当前市场上的Native App中WebView使用的情况还是比较多的，像手机QQ，淘宝业务更替快速的产品，使用WebView动态渲染页面是必然的选择，然而遵从这个选择就必须承担着它带来的弊病，更确切地说应该是尽可能解决它的弊病。
 
-### 前言
+## 前言
 
-众所周知在移动端使用WebView给人最直观的感觉是卡、慢。造成这个现象的原因是多层面的，不过主要可以归纳为两个方面<sup>[2]</sup> ：
+众所周知在移动端使用WebView给人最直观的感觉是慢。造成这个现象的原因是多层次的，不过主要可以归纳为两个方面<sup>[2]</sup> ：
 
 * 页面启动时间：打开一个 H5 页面需要做一系列处理，会有一段白屏时间，体验糟糕。
 * 响应流畅度：由于 webkit 的渲染机制，单线程，历史包袱等原因，页面刷新/交互的性能体验不如原生。
@@ -27,7 +27,7 @@ RN和Weex的核心实现跟WebView并没有关系，它们实现的并不是Hybr
 
 这都不是我们今天的主角，今日主场属于WebView，那么我们所面临的问题是： __H5页面启动时间__
 
-### 流程分析
+## 流程分析
 
 下图是一个H5页面展示过程中要经历的流程：
 ![H5页面加载流程](http://ojam5z7vg.bkt.clouddn.com/H5%E9%A1%B5%E9%9D%A2%E5%8A%A0%E8%BD%BD%E6%B5%81%E7%A8%8B.png)
@@ -36,17 +36,20 @@ RN和Weex的核心实现跟WebView并没有关系，它们实现的并不是Hybr
 
 ----
 
-### 优化
-#### 前端
+## 优化
+
+
+### 前端
 B/S结构模式上对web的优化已经有做得比较极致方法，本文就不再介绍了（作为客户端同学也没有什么经验）这里给一个参考传送门<sup>[5]</sup>：
 [唯快不破：Web 应用的 13 个优化步骤](https://zhuanlan.zhihu.com/p/21417465?refer=no-backend)
 
 比较重要也是优化效果比较显著的是能够熟悉[HTTP缓存协议](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/http-caching?hl=zh-cn)使用，这个需要服务端配合一起优化。
 
-#### 客户端
+
+### 客户端
 客户端上的H5展示跟传统的web页面有所不同，有优势也更有劣势。相对于PC端的处理器，移动客户端上的CPU性能会有所差距。不过由于客户端的H5是通过WebView内嵌在App中，情况不会像传统web一样，所有的优化都受限在浏览器之下，在客户端我们可以拿到更多的权限，做更深的优化。
 
-##### 缓存（主要针对iOS端，慎读！大片OC代码风格可能引起您的不适）
+#### 缓存（主要针对iOS端，慎读！大片OC代码风格可能引起您的不适）
 
 客户端可以拦截所有的网络请求，并自己实现缓存机制。iOS端的Cocoa框架UIWebView提供了客户端层面的缓存策略：
 
@@ -72,11 +75,11 @@ NSURLRequestReloadRevalidatingCacheData //源文件中写到没有实现
 
 ----
 
-##### WKWebView是否支持NSURLProtocol？
+#### WKWebView是否支持NSURLProtocol？
 
 在使用`WKWebView`加载网页的时候，`NSURLProtocol`子类会不能拦截到请求，原因是`WKWebView`的请求是在单独的进程里，所以不会走`NSURLProtocol`。当然解决办法是有的，因为其实`WKWebView`是支持`NSURLProtocol`协议的，只是还不够完善，当前可以通过调用私有的API去完成这项任务（详细分析过程见[参考[6]](https://www.jianshu.com/p/55f5ac1ab817)）,以下是实现的关键代码：
 
-```
+``` objectivec
 FOUNDATION_STATIC_INLINE Class ContextControllerClass() {
     static Class cls;
     if (!cls) {
@@ -143,7 +146,7 @@ PS: iOS11之后可以通过[`WKURLSchemeHandler`](https://developer.apple.com/do
 
 ---
 
-上述方案似乎已完整解决缓存问题，但实际上还有很多问题：
+上述方案似乎已经完美解决缓存问题，但实际上还有很多问题：
 
 * 没有预加载：第一次打开的体验很差，所有数据都要从网络请求。
 * 缓存不可控：缓存的存取由系统 webview 控制，无法控制它的缓存逻辑，带来的问题包括： 
@@ -154,7 +157,7 @@ PS: iOS11之后可以通过[`WKURLSchemeHandler`](https://developer.apple.com/do
 
 还有一个方案就是使用zip包存放HTML文件和资源文件，进行统一管理。
 
-##### 离线H5 zip 包
+#### 离线H5 zip 包
 
 以下是现任职蚂蚁金服的`bang`提供的一个比较完善的客户端离线包方案：
 
@@ -180,18 +183,19 @@ PS: iOS11之后可以通过[`WKURLSchemeHandler`](https://developer.apple.com/do
 
 这一块还有很多需要实践的点..
 
-##### 预加载 webview
+#### 预加载 webview
 
 无论是 iOS 还是 Android，本地 webview 初始化都要不少时间，可以预先初始化好 webview。这里分两种预加载：
 
 * 首次预加载：在一个进程内首次初始化 webview 与第二次初始化不同，首次会比第二次慢很多。原因预计是 webview 首次初始化后，即使 webview 已经释放，但一些多 webview 共用的全局服务或资源对象仍没有释放，第二次初始化时不需要再生成这些对象从而变快。我们可以在 APP 启动时预先初始化一个 webview 然后释放，这样等用户真正走到 H5 模块去加载 webview时就变快了。
 * webview 池：可以用两个或多个 webview 重复使用，而不是每次打开 H5 都新建 webview。不过这种方式要解决页面跳转时清空上一个页面，另外若一个 H5 页面上 JS 出现内存泄漏，就影响到其他页面，在 APP 运行期间都无法释放了。
 
+----
 
-### 总结
+## 总结
 WebView层面加载提高性能最大的优化方向还是缓存，预加载，在有限的资源和时间内更合理地调度资源。
 
-### Reference 
+## Reference 
 
 ###### [1]. [Http缓存](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/http-caching?hl=zh-cn)
 ###### [2]. [移动 H5 首屏秒开优化方案探讨](https://blog.cnbang.net/tech/3477/)

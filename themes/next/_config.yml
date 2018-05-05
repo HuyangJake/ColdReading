@@ -317,15 +317,15 @@ han: false
 #swiftype_key:
 
 # Baidu Analytics ID
-#baidu_analytics:
+baidu_analytics: 3fdf633934fb9f62ceee0538975b8820
 
 # Duoshuo ShortName
 #duoshuo_shortname:
 
 # Disqus
 disqus:
-  enable: false
-  shortname:
+  enable: true
+  shortname: coldreading-1
   count: true
 
 # Hypercomments
@@ -349,8 +349,8 @@ changyan:
 # Available value:
 #    button | slide
 # Warning: Baidu Share does not support https.
-baidushare:
- type: slide
+# baidushare:
+#  type: slide
 
 # Share
 #jiathis:

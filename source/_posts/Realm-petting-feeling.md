@@ -23,7 +23,7 @@ try! realm.write {
 print("age of my dog: \(myDog.age)") // => 2
 
 ```
-
+<!--more-->
 
 ### Models（数据库中的表）
 
@@ -74,8 +74,7 @@ class Person: Object {
         return "id"
     }
 }
-``` 
-
+```
 
 #### 索引
 
@@ -91,6 +90,7 @@ class Book: Object {
     }
 }
 ```
+
 索引支持 `string`, `integer`, `boolean`, `Date`类型的属性
 
 
@@ -115,18 +115,20 @@ class Person: Object {
 
 #### 属性修饰词
 
-Type|	Non-optional|	Optional
+
+|Type|	Non-optional|	Optional|
 |:-:|:-:|:-:|
-Bool	|@objc dynamic var value = false	|let value = RealmOptional<Bool>()
-Int	|@objc dynamic var value = 0	|let value = RealmOptional<Int>()
-Float	|@objc dynamic var value: Float = 0.0	|let value = RealmOptional<Float>()
-Double|	@objc dynamic var value: Double = 0.0	|let value = RealmOptional<Double>()
-String|	@objc dynamic var value = ""	|@objc dynamic var value: String? = nil
-Data	|@objc dynamic var value = Data()	|@objc dynamic var value: Data? = nil
-Date	|@objc dynamic var value = Date()	|@objc dynamic var value: Date? = nil
-Object|	n/a: must be optional	|@objc dynamic var value: Class?
-List	|let value = List<Type>()	|n/a: must be non-optional
-LinkingObjects	|let value = LinkingObjects(fromType: Class.self, property: "property")	|n/a: must be non-optional
+|Bool	|@objc dynamic var value = false	|let value = RealmOptional<Bool>()|
+|Int	|@objc dynamic var value = 0	|let value = RealmOptional<Int>()|
+|Float	|@objc dynamic var value: Float = 0.0	|let value = RealmOptional<Float>()|
+|Double|	@objc dynamic var value: Double = 0.0	|let value = RealmOptional<Double>()|
+|String|	@objc dynamic var value = ""	|@objc dynamic var value: String? = nil|
+|Data	|@objc dynamic var value = Data()	|@objc dynamic var value: Data? = nil|
+|Date	|@objc dynamic var value = Date()	|@objc dynamic var value: Date? = nil|
+|Object|	n/a: must be optional	|@objc dynamic var value: Class?=nil
+|List	|let value = List<Type>()	|n/a: must be non-optional|
+|LinkingObjects	|let value = LinkingObjects(fromType: Class.self, property: "property")	|n/a: must be non-optional|
+
 
 
 ---
@@ -198,7 +200,7 @@ class Dog: Object {
 
 通知返回的是这个通知的token，一旦token被释放了，就意味着这个通知也被注销了。
 
-一旦有相关的写操作没提交，无论在什么线程上的写操作，通知将会异步地被触发，此时可以进行UI的刷新。
+一旦有相关的写操作被提交，无论在什么线程上的写操作，通知将会异步地被触发，此时可以进行UI的刷新。
 
 ``` swift
 // Observe Realm Notifications

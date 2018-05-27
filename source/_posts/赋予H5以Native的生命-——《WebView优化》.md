@@ -197,10 +197,10 @@ WebView层面加载提高性能最大的优化方向还是缓存，预加载，�
 
 ## Reference 
 
-###### [1]. [Http缓存](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/http-caching?hl=zh-cn)
-###### [2]. [移动 H5 首屏秒开优化方案探讨](https://blog.cnbang.net/tech/3477/)
-###### [3]. [WebView性能、体验分析与优化](https://tech.meituan.com/WebViewPerf.html)
-###### [4]. [70%以上业务由H5开发，手机QQ Hybrid 的架构如何优化演进？](https://mp.weixin.qq.com/s/evzDnTsHrAr2b9jcevwBzA)
-###### [5]. [唯快不破：Web 应用的 13 个优化步骤](https://zhuanlan.zhihu.com/p/21417465?refer=no-backend)
-###### [6]. [一个完美的半成品-WKWebView](https://www.jianshu.com/p/55f5ac1ab817)
+- [1]. [Http缓存](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/http-caching?hl=zh-cn)
+- [2]. [移动 H5 首屏秒开优化方案探讨](https://blog.cnbang.net/tech/3477/)
+- [3]. [WebView性能、体验分析与优化](https://tech.meituan.com/WebViewPerf.html)
+- [4]. [70%以上业务由H5开发，手机QQ Hybrid 的架构如何优化演进？](https://mp.weixin.qq.com/s/evzDnTsHrAr2b9jcevwBzA)
+- [5]. [唯快不破：Web 应用的 13 个优化步骤](https://zhuanlan.zhihu.com/p/21417465?refer=no-backend)
+- [6]. [一个完美的半成品-WKWebView](https://www.jianshu.com/p/55f5ac1ab817)
 

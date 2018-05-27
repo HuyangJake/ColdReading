@@ -6,13 +6,13 @@
 title: ColdCode
 subtitle: 托起一片绿叶，走向更远的远方
 description: 记录生活工作
-author: Jakey_yang
+author: Jakey
 language: zh-Hans
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://jake.gift
+url: http://huyangjie.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:

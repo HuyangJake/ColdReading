@@ -18,7 +18,7 @@ Component定义了一些抽象操作，具体类将进行重载实现自己特�
 默认的operation方法只是想内嵌的Component发送一个消息，Decorator的具体实现类重载父类的operation，通过super把自己增加的行为扩展给Component的operation。如果只需要向Component添加一种职责，那可以省掉抽象的Decorator类，让具体的Decorator直接把请求转发给Component。那么这种方式就好像形成一种操作链，把一种行为加到另一种行为之上，如[__对象图__](#class map)
 
 #### <span id="class map">装饰模式类图</span>
-![](http://ojam5z7vg.bkt.clouddn.com/coldreading/jpg/%E8%A3%85%E9%A5%B0%E6%A8%A1%E5%BC%8F%E7%B1%BB%E5%9B%BE.png-blog)
+![](http://qiniu.huyangjie.cn/coldreading/jpg/%E8%A3%85%E9%A5%B0%E6%A8%A1%E5%BC%8F%E7%B1%BB%E5%9B%BE.png-blog)
 
 ### 何时使用装饰模式
 * 想要在不影响其他对象的情况下，以动态、透明的方式给单个对象添加职责。
@@ -40,7 +40,7 @@ Component定义了一些抽象操作，具体类将进行重载实现自己特�
 ---
 #### <span id="child">真子类实现装饰</span>
 先看目录结构：
-![](http://ojam5z7vg.bkt.clouddn.com/coldreading/jpg/%E7%9C%9F%E6%AD%A3%E5%AD%90%E7%B1%BB%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84.png-blog)
+![](http://qiniu.huyangjie.cn/coldreading/jpg/%E7%9C%9F%E6%AD%A3%E5%AD%90%E7%B1%BB%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84.png-blog)
 
 Component抽象类是一个Protocol文件，
 
@@ -135,10 +135,10 @@ during animation.
 ```
 
 __类图如下:__
-![](http://ojam5z7vg.bkt.clouddn.com/coldreading/jpg/%E6%AD%A3%E7%9C%9F%E5%AD%90%E7%B1%BB%E7%B1%BB%E5%9B%BE.png-blog)
+![](http://qiniu.huyangjie.cn/coldreading/jpg/%E6%AD%A3%E7%9C%9F%E5%AD%90%E7%B1%BB%E7%B1%BB%E5%9B%BE.png-blog)
 
 各种ImageComponent对象可在运行时进行连接，如下图：
-![](http://ojam5z7vg.bkt.clouddn.com/coldreading/jpg/ImageComponent%E9%93%BE%E6%8E%A5.png-blog)
+![](http://qiniu.huyangjie.cn/coldreading/jpg/ImageComponent%E9%93%BE%E6%8E%A5.png-blog)
 
 ---
 #### <span id="category">分类实现装饰</span>
@@ -146,10 +146,10 @@ __类图如下:__
 分类方式实现就是平常开发中常见的使用，代码就不再一一列出
 
 类图如下：
-![](http://ojam5z7vg.bkt.clouddn.com/coldreading/jpg/%E5%88%86%E7%B1%BB%E7%B1%BB%E5%9B%BE.png-blog)
+![](http://qiniu.huyangjie.cn/coldreading/jpg/%E5%88%86%E7%B1%BB%E7%B1%BB%E5%9B%BE.png-blog)
 
 `BaseFilter`分类中定义了绘图的方法，`Transform`和`shadow`分类中可以调用`BaseFilter`分类中定义的方法来进行自己的绘制。他们也可以像真正子类化方式那样链接起来，来看对象图:
-![](http://ojam5z7vg.bkt.clouddn.com/coldreading/jpg/%E5%88%86%E7%B1%BB%E9%93%BE%E6%8E%A5%E5%AF%B9%E8%B1%A1%E5%9B%BE.png-blog)
+![](http://qiniu.huyangjie.cn/coldreading/jpg/%E5%88%86%E7%B1%BB%E9%93%BE%E6%8E%A5%E5%AF%B9%E8%B1%A1%E5%9B%BE.png-blog)
 
 ---
 ### 总结

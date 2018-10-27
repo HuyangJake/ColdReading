@@ -29,7 +29,7 @@ tags: [iOS]
 
 #### 准备编译环境
 我这次使用的是老库中的[Python3.4.2-b5](https://github.com/pybee/Python-iOS-support/releases/download/3.4.2-b5/Python-3.4.2-iOS-support.b5.tar.gz)版本，下载下来有两个framework，分别是`OpenSSL`和`Python`。将这个两个framework拖入项目中，添加必要的lib库如图：
-![](http://ojam5z7vg.bkt.clouddn.com/15359053297417.jpg)
+![](http://qiniu.huyangjie.cn/15359053297417.jpg)
 
 在项目中创建`PythonEnvironment.bundle`将`Python.framework`中的`Restources`文件夹内容复制进去，在初始化Python环境之前将bundle中的文件复制到指定目录作为Home路径
 
@@ -75,7 +75,7 @@ PyRun_SimpleFile(mainFile, (char *)[[scriptPath lastPathComponent] UTF8String]);
 
 ### 准备七牛Python库
 下载好的七牛SDK文件源码解压，在Xcode中创建一个bundle加入项目中，bundle中放七牛SDK的核心文件，如图：
-![](http://ojam5z7vg.bkt.clouddn.com/15359397140219.jpg)
+![](http://qiniu.huyangjie.cn/15359397140219.jpg)
 
 在需要使用七牛SDK之前，将此bundle中的文件拷贝到Python运行环境的home目录下
 

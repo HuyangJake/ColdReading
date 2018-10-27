@@ -21,7 +21,7 @@ Cookie分类两类：
 __cookie如何工作__
 
 cookie 中包含了一个由 名字 = 值 （name=value） 这样的信息构成的任意列表，并通过 Set-Cookie 或 Set-Cookie2 HTTP 响应（扩 展）首部将其贴到用户身上去。
-![cookie工作](http://ojam5z7vg.bkt.clouddn.com/coldreading/jpg/cookie%E5%B7%A5%E4%BD%9C.png-blog)
+![cookie工作](http://qiniu.huyangjie.cn/coldreading/jpg/cookie%E5%B7%A5%E4%BD%9C.png-blog)
 
 
 __cookie组成__
@@ -30,8 +30,8 @@ __cookie组成__
 * __cookie版本0__
 	* Set-Cookie 首部
 Set-Cookie 首部有一个强制性的cookie名和cookie值。后面跟着可选的cookie 属性，中间由分号分隔。
-![](http://ojam5z7vg.bkt.clouddn.com/coldreading/jpg/setcookie%E9%A6%96%E9%83%A81.png-blog)
-![](http://ojam5z7vg.bkt.clouddn.com/coldreading/jpg/setcookie%E9%A6%96%E9%83%A82.png-blog)
+![](http://qiniu.huyangjie.cn/coldreading/jpg/setcookie%E9%A6%96%E9%83%A81.png-blog)
+![](http://qiniu.huyangjie.cn/coldreading/jpg/setcookie%E9%A6%96%E9%83%A82.png-blog)
 
 	* cookie 0首部:
 
@@ -42,7 +42,7 @@ Cookie: session-id=002-1145265-8016838; session-id-time=1007884800
 * __cookie版本1__ 
 	* Set-Cookie2首部
 这个版本 1 标准引入了Set-Cookie2首部和Cookie2首部，但它也能于版本0进行交互操作。
-![](http://ojam5z7vg.bkt.clouddn.com/coldreading/jpg/setcookie2%E9%A6%96%E9%83%A8.png-blog)
+![](http://qiniu.huyangjie.cn/coldreading/jpg/setcookie2%E9%A6%96%E9%83%A8.png-blog)
 
 	* cookie 1首部:
 

@@ -30,7 +30,7 @@ RN和Weex的核心实现跟WebView并没有关系，它们实现的并不是Hybr
 ## 流程分析
 
 下图是一个H5页面展示过程中要经历的流程：
-![H5页面加载流程](http://ojam5z7vg.bkt.clouddn.com/H5%E9%A1%B5%E9%9D%A2%E5%8A%A0%E8%BD%BD%E6%B5%81%E7%A8%8B.png)
+![H5页面加载流程](http://qiniu.huyangjie.cn/H5%E9%A1%B5%E9%9D%A2%E5%8A%A0%E8%BD%BD%E6%B5%81%E7%A8%8B.png)
 
 简单的页面可能会没有JS请求数据这一个步骤，一般页面在 dom 渲染后能显示雏形，在这之前用户看到的都是白屏，等到下载渲染图片后整个页面才完整显示，打开页面优化就是要减少这个过程的耗时。
 
@@ -64,14 +64,14 @@ NSURLRequestReloadRevalidatingCacheData //源文件中写到没有实现
 ```
 
 其中默认缓存策略（最通用）`NSURLRequestUseProtocolCachePolicy`的流程如下：
-![](http://ojam5z7vg.bkt.clouddn.com/15252477856431.jpg)
+![](http://qiniu.huyangjie.cn/15252477856431.jpg)
 
 
 其实我们自定义缓存策略，加上更多优化的点，比如自定义缓存的存储方式能够实现离线缓存，又能够实时更新，定义本地缓存失效时间等。
 
 自定义流程的实现在iOS中是通过继承`NSURLProtocol`拦截处理所有的网络请求来实现的，这是我的一种实现方案：[YJURLProtocol](https://github.com/HuyangJake/YJURLProtocol)  当然GitHub上有很多实现方案，最好是根据自己的需求去自定义。
 
-![](http://ojam5z7vg.bkt.clouddn.com/15252481937129.jpg)
+![](http://qiniu.huyangjie.cn/15252481937129.jpg)
 
 ----
 

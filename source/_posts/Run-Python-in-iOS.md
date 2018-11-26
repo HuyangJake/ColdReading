@@ -31,7 +31,7 @@ tags: [iOS]
 我这次使用的是老库中的[Python3.4.2-b5](https://github.com/pybee/Python-iOS-support/releases/download/3.4.2-b5/Python-3.4.2-iOS-support.b5.tar.gz)版本，下载下来有两个framework，分别是`OpenSSL`和`Python`。将这个两个framework拖入项目中，添加必要的lib库如图：
 ![](http://qiniu.huyangjie.cn/15359053297417.jpg)
 
-在项目中创建`PythonEnvironment.bundle`将`Python.framework`中的`Restources`文件夹内容复制进去，在初始化Python环境之前将bundle中的文件复制到指定目录作为Home路径
+在项目中创建`PythonEnvironment.bundle`将`Python.framework`中的`Resources`文件夹内容复制进去，在初始化Python环境之前将bundle中的文件复制到指定目录作为Home路径
 
 #### 设置Home路径、初始化
 
@@ -154,7 +154,7 @@ NSLog(@"%s", resultCString);
 ### 总结
 
 使用过程中有下面几点体会
-* `Python-Apple-support`库的缺少文档，在设置Home目录导入模块的过程中踩了很多坑
+* ~~`Python-Apple-support`库的缺少文档~~ 查看Python的c-api库：https://docs.python.org/3.5/c-api/ ，在设置Home目录导入模块的过程中踩了很多坑
 * 编译器对Python语法提示并不支持，难以排查写错的地方
 * framework的体积是在过大，对项目总体积影响大
 

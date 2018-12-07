@@ -1,7 +1,7 @@
 ---
 title: 机器学习-统计基础-t检验
 date: 2018-02-08 11:09:26
-tags: [Mashing Learning]
+tags: [Machine Learning]
 categories: [学习笔记]
 ---
 

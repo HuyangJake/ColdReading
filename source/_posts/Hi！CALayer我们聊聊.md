@@ -66,7 +66,7 @@ layer.contentsScale = [UIScreen mainScreen].scale;
 优点：图片的载入会更加快，提高了载入性能
 
 contentsRect的`{0, 0, 0.5, 0.5}`效果
-![](http://ojam5z7vg.bkt.clouddn.com/coldreading/jpg/contentsRect.png-bigblog)
+![](http://qiniu.huyangjie.cn/coldreading/jpg/contentsRect.png-bigblog)
 
 ``` 
 
@@ -89,7 +89,7 @@ contentsRect的`{0, 0, 0.5, 0.5}`效果
 #### 2.3 使用`contentsCenter`调整可拉伸区域的大小
 contentsCenter 其实是一个CGRect，它定义了一个固定的边框和一个在图 层上可拉伸的区域。
 
-![](http://ojam5z7vg.bkt.clouddn.com/coldreading/jpg/contentsCenter.png-bigblog)
+![](http://qiniu.huyangjie.cn/coldreading/jpg/contentsCenter.png-bigblog)
 
 除此之外还可以用IB来控制`contentsCenter`属性。 在视图的第四个检查器中，有一个`stretching`属性，简直不要太赞👍
 

@@ -1,7 +1,7 @@
 ---
 title: 机器学习-统计基础-t检验
 date: 2018-02-08 11:09:26
-tags: [Mashing Learning]
+tags: [Machine Learning]
 categories: [学习笔记]
 ---
 
@@ -29,13 +29,13 @@ categories: [学习笔记]
 t表显示的是临界值，左边显示的是自由度，右边（顶部）显示的是右尾的面积， 底部的是置信区间
 t表格
 
-<img src="http://ojam5z7vg.bkt.clouddn.com/article/img/E9D9E242DE8D75E679D0A8140E93FE85.jpg" width="300px">
+<img src="http://qiniu.huyangjie.cn/article/img/E9D9E242DE8D75E679D0A8140E93FE85.jpg" width="300px">
 [大图点击这里](https://s3.amazonaws.com/udacity-hosted-downloads/t-table.jpg)
 
 
 #### 影响t统计量
 
-<img src="http://ojam5z7vg.bkt.clouddn.com/article/img/DC58EA0C446C0CE76C23869C22D51F60.jpg" width="300px">
+<img src="http://qiniu.huyangjie.cn/article/img/DC58EA0C446C0CE76C23869C22D51F60.jpg" width="300px">
 
 将t分布的中心放在 μ0 处，然后看看x拔位于这个分布的那个位置，x拔越靠近两端，更有可能所来自的总体的均值和  μ0 显著不同。
 
@@ -43,7 +43,7 @@ t表格
 
 P值等于t统计量在红色的区域内的概率
 
-<img src="http://ojam5z7vg.bkt.clouddn.com/article/img/908A45D67C9EA2F4066FC4ECCEC4D899.jpg" width="300px">
+<img src="http://qiniu.huyangjie.cn/article/img/908A45D67C9EA2F4066FC4ECCEC4D899.jpg" width="300px">
 
 当P值小于α水平时，我们会拒绝零假设
 
@@ -61,7 +61,7 @@ P值等于t统计量在红色的区域内的概率
 
 Cohen's d 是一种[效应量](#effect_size)度量用来衡量两个均值之间的标准化均值差（以标准偏差为单位）， 除以的是样本标准差
 
-<img src="http://ojam5z7vg.bkt.clouddn.com/article/img/1E97F29DD3AF56E94DB5ABE140BF602C.jpg" width="300px">
+<img src="http://qiniu.huyangjie.cn/article/img/1E97F29DD3AF56E94DB5ABE140BF602C.jpg" width="300px">
 
 
 #### 置信区间
@@ -74,9 +74,9 @@ Cohen's d 是一种[效应量](#effect_size)度量用来衡量两个均值之间
 如果同意受试者参加两次测试，则这两次结果是相依样本。为了衡量这些值之间的差别 Di = xi - yi
 
 μQ - μA = μD
-<img src="http://ojam5z7vg.bkt.clouddn.com/article/img/716D7E3BF12230B87FAF1AEE27E1646C.jpg" width="300px">
+<img src="http://qiniu.huyangjie.cn/article/img/716D7E3BF12230B87FAF1AEE27E1646C.jpg" width="300px">
 
-<img src="http://ojam5z7vg.bkt.clouddn.com/article/img/E14D2A3F524834B0A3A21CF36082E572.jpg" width="300px">
+<img src="http://qiniu.huyangjie.cn/article/img/E14D2A3F524834B0A3A21CF36082E572.jpg" width="300px">
 
 #### 相依样本t检验 设计类型
 10a 31
@@ -135,7 +135,7 @@ __Disadvantages__
 r^2表示的是两个变量之间的关系程度也称为确定系数。
 r^2是一个比例，范围从0到1. 0代表两个变量根本没有关系，1代表两个变量完全相关
 
-<img src="http://ojam5z7vg.bkt.clouddn.com/article/img/CBE24A42655F62B672824B2419B2E453.jpg" width="300px">
+<img src="http://qiniu.huyangjie.cn/article/img/CBE24A42655F62B672824B2419B2E453.jpg" width="300px">
 这里的t不是临界值，是从t检验中获得的值
 
 #### 报告结果
@@ -154,7 +154,7 @@ t值，p值，单尾检验还是双尾检验
 
 #### t检验公式
 
-<img src="http://ojam5z7vg.bkt.clouddn.com/article/img/4F58FD2662042864DE48F2B39220549D.jpg" width="300px">
-<img src="http://ojam5z7vg.bkt.clouddn.com/article/img/CFA3D97A5FD10F5092E3D69683577632.jpg" width="300px">
+<img src="http://qiniu.huyangjie.cn/article/img/4F58FD2662042864DE48F2B39220549D.jpg" width="300px">
+<img src="http://qiniu.huyangjie.cn/article/img/CFA3D97A5FD10F5092E3D69683577632.jpg" width="300px">
 
 

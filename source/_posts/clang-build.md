@@ -1,10 +1,9 @@
 ---
-title: clang build
+title: Clang 源码开发环境的搭建
 date: 2020-03-31 23:57:39
 tags: 编译原理
 ---
 
-# Clang 源码开发环境的搭建
 
 跟随 [教程](https://www.jianshu.com/p/e3f46d42643b) 搭建
 

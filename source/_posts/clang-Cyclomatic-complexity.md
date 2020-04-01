@@ -1,10 +1,8 @@
 ---
-title: clang Cyclomatic complexity
+title: Clang 插件计算圈复杂度
 date: 2020-04-01 00:02:12
 tags: [编译原理]
 ---
-
-# Clang 插件计算圈复杂度
 
 ![](http://qiniu.huyangjie.cn/mweb/15853651754787.jpg)
 
